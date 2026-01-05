@@ -1,0 +1,172 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;successful-login-with-standard-user",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Successful login with standard user",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the SauceDemo login page",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I login with username \"standard_user\" and password \"secret_sauce\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should be redirected to the inventory page",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;login-with-locked-out-user-should-fail",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Login with locked out user should fail",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the SauceDemo login page",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I login with username \"locked_out_user\" and password \"secret_sauce\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see an error message containing \"locked out\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Login with invalid credentials",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the SauceDemo login page",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I login with username \"invalid_user\" and password \"wrong_password\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should see an error message containing \"Username and password do not match\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Login functionality",
+    "tags": [
+      {
+        "name": "@login",
+        "line": 1
+      },
+      {
+        "name": "@e2e",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\ui\\features\\authentication\\login.feature"
+  }
+]

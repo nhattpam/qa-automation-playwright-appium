@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# Biên dịch TypeScript
+dist/
+# *.js
+*.js.map
+
+# Output của Playwright (screenshots, videos, traces)
+test-results/
+playwright-report/
+*.log
+
+# Environment files (nếu có)
+# .env
+.env.local
+
+# VSCode settings (nếu dùng)
+.vscode/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Coverage (nếu dùng)
+coverage/
+
+# Cucumber JSON reports (nếu xuất ra)
+*.cucumber-report.json
